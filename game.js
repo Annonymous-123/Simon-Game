@@ -16,7 +16,7 @@ function nextSequence(){
     $("#"+randomChosenColour).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
     playSound(randomChosenColour);
     $("h1").text("Level "+level);
-    console.log(gamePattern);
+    // console.log(gamePattern);
 
 }
 //For getting the sequence of buttons user clicked
@@ -26,7 +26,7 @@ $( ".btn" ).click(function() {
    playSound(userChosenColour);
    animatePress(this);
    checkAnswer(userClickedPattern.length);
-   console.log(userClickedPattern);
+   // console.log(userClickedPattern);
    }
 );
 
